@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/fancybox.css" />
@@ -219,7 +223,7 @@
               Подивіться відео презентацію нашого сервісу і виберіть автомобіль
               вже зараз!
             </p>
-            <a
+            <a 
               href="https://www.youtube.com/watch?v=AFVwQ_E5Yrs"
               data-fancybox class="video-popup" >перегляд <br />
               презентації</a
@@ -355,8 +359,14 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="js/fancybox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox]', {
+      });    
+    </script>
+    <!-- <script src="js/fancybox.js"></script> -->
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
+
